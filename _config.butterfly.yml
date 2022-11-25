@@ -3,7 +3,6 @@
 # Main menu navigation (導航目錄)
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 menu:
-  Search: /search.xml
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
   Tags: /tags/ || fas fa-tags
@@ -546,8 +545,8 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -569,7 +568,7 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -595,10 +594,10 @@ display_mode: dark
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
-  field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: "#F47466"
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
