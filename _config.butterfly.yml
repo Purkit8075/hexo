@@ -94,20 +94,20 @@ index_img: https://ci.cncn3.cn/c25eb8c4cef2b0321b2f56b8e743f6dd.jpg
 default_top_img:
 
 # The banner image of archive page
-archive_img:
+archive_img: https://ci.cncn3.cn/3065865960ff5a152e7184ac28edb7e9.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: https://ci.cncn3.cn/7a5ac385b6100bed3a712ef19135aa96.png
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
 tag_per_img:
 
-# If the banner of category page not setting, it will show the top_img
+# If the banner  ofcategory page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img:
+category_img: https://ci.cncn3.cn/2dd752397270ba9494d63259b09e8e88.png
 
 # The banner image of category page
 # format:
