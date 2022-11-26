@@ -90,6 +90,6 @@ feed:
   content_limit: 200
   content_limit_delim: " "
   order_by: -date
-  icon: icon.png
+  icon: https://ci.cncn3.cn/48ddaee40f5102507d7f08485fed5a72.png
   autodiscovery: true
   template:
