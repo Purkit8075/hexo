@@ -84,10 +84,10 @@ feed:
   enable: true
   type: atom
   path: index.xml
-  limit: 20
+  limit: 0
   hub:
   content:
-  content_limit: 140
+  content_limit: 200
   content_limit_delim: " "
   order_by: -date
   icon: icon.png
