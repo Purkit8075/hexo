@@ -36,7 +36,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
+  fab fa-github: https://github.com/Purkit8075 || Github
   fas fa-envelope: mailto:purkit@purkit.ml || Email
 
 # search (搜索)
@@ -667,7 +667,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/Purkit8075
