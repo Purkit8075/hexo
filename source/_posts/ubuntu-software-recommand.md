@@ -26,7 +26,7 @@ cover: https://ci.cncn3.cn/1e2854aef14210752eb7d9267e08675a.png
 
 这里直接放出官网的下载链接：[Download VsCode](https://code.visualstudio.com/Download) 。
 
-如果访问和下载速度较慢，则可以使用我的网盘进行下载： [网盘下载](https://networkdisk.purkit.ml/Linux%20Software/Ubuntu-share/code_1.72.0-1664926972_amd64.deb) 。
+如果访问和下载速度较慢，则可以使用我的网盘进行下载： [网盘下载](https://share.purkit.ml/Linux%20Software/Ubuntu-share/code_1.72.0-1664926972_amd64.deb) 。
 
 这里再顺便提一下我安装的 `VsCode` 插件和一些配置。
 
@@ -415,7 +415,7 @@ WhitespaceSensitiveMacros:
 
 您可以在 `Github` 上找到它： [洛雪音乐助手](https://github.com/lyswhut/lx-music-desktop) 。
 
-下载您可以通过 [Releases 页面](https://github.com/lyswhut/lx-music-desktop/releases) 或者 [我的网盘](https://networkdisk.purkit.ml/Linux%20Software/Ubuntu-share/lx-music-desktop.v1.22.3.x64.deb) 进行下载。
+下载您可以通过 [Releases 页面](https://github.com/lyswhut/lx-music-desktop/releases) 或者 [我的网盘](https://share.purkit.ml/Linux%20Software/Ubuntu-share/lx-music-desktop.v1.22.3.x64.deb) 进行下载。
 
 对于该软件的使用，您可以参阅 [官方文档](https://lxmusic.toside.cn/) 。
 
@@ -453,6 +453,6 @@ WhitespaceSensitiveMacros:
 
 使用它有一定风险，因为腾讯是不喜欢别人动摇它的垄断地位的，所以，使用第三方客户端会有冻结账号的风险，读者们量力而行。
 
-对于它的下载，您可以在 [Releases 页面](https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases) 进行下载也可以在 [我的网盘](https://networkdisk.purkit.ml/Linux%20Software/Ubuntu-share/icalingua_2.7.5_amd64.deb) 进行下载。
+对于它的下载，您可以在 [Releases 页面](https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases) 进行下载也可以在 [我的网盘](https://share.purkit.ml/Linux%20Software/Ubuntu-share/icalingua_2.7.5_amd64.deb) 进行下载。
 
 因为我对于 `Ubuntu` 的探索也还不够深，所以之后我会在这篇文章中继续推荐软件，欢迎大家关注。
