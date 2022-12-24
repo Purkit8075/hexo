@@ -38,6 +38,7 @@ copy:
 social:
   fab fa-github: https://github.com/Purkit8075 || Github
   fas fa-envelope: mailto:purkit@purkit.ml || Email
+  fa fa-rss: https://feeds.pub/feed/https%3A%2F%2Fblog.purkit.ml%2Findex.xml || RSS
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
