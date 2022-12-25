@@ -1,28 +1,22 @@
 ---
-title: 搭建 WordPress 博客
+title: 零成本搭建 WordPress 博客
 date: 2022-12-25
 description: 从零开始零成本搭建 WordPress 博客。
 tags: ["WordPress"]
 categories: 网站
 keywords: ["WordPress","反代","免费"]
 cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
-    # C++ 教程： 
+    # C++ 教程：
 ---
-
 # 从零开始零成本搭建 WordPress 博客
 
 ## 需要的工具
 
 * 一个谷歌账号
-
 * 一个 Github 账号
-
 * 一个 Pantheon 账号
-
 * 一个 Freenom 账号
-
 * 一个 Render 账号
-
 * 一个 Cloudflare 账号
 
 ## 注册免费域名
@@ -36,8 +30,6 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 依次点击 `Services -> Register a New Domain` 。
 
 <img src="https://ci.cncn3.cn/bc088e10b8c123ed8aa3cc68f9206f40.png" title="" alt="bc088e10b8c123ed8aa3cc68f9206f40.png" data-align="center">
-
-
 
 在搜索框中输入您想要的域名，记得加上后缀。
 
@@ -146,9 +138,8 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 ## 注意事项
 
 * 每三个月都要到 `Pantheon`  中进行一次 `commit` ，否则您的博客会被暂时停止，数据不会丢失。
-
 * `Render` 的免费账户一个月的服务时间一共只有 750 小时，这就意为着，您只能在免费账号中添加一个项目。如果时间用完，那么您的项目将会被停止。
 
----------------------
+---
 
 ——END——
