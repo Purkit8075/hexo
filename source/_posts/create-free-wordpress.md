@@ -1,5 +1,5 @@
 ---
-title: 零成本搭建 WordPress 博客
+title: Pantheon + Render 搭建免费 WordPress 博客
 date: 2022-12-25
 description: 从零开始零成本搭建 WordPress 博客。
 tags: ["WordPress"]
