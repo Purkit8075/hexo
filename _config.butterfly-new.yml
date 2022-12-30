@@ -4,12 +4,14 @@
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 menu:
   Home: / || fas fa-home
-  Archives: /archives/ || fas fa-archive
-  Tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-folder-open
+  Articles||fa fa-book:
+    Archives: /archives/ || fas fa-archive
+    Tags: /tags/ || fas fa-tags
+    Categories: /categories/ || fas fa-folder-open
   Comment: /comments/ || fa fa-comments
   Link: /link/ || fas fa-link
-  My Disk: https://share.purkit.ml/ || fas fa-cloud
+  Status: https://analyze.purkit.ml/share/3O0Hb21X/Purkit's%20Blog || fa fa-signal
+  # My Disk: https://share.purkit.ml/ || fas fa-cloud
   About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
