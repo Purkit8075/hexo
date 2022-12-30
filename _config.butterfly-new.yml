@@ -10,7 +10,7 @@ menu:
     Categories: /categories/ || fas fa-folder-open
   Comment: /comments/ || fa fa-comments
   Link: /link/ || fas fa-link
-  Status: https://analyze.purkit.ml/share/3O0Hb21X/Purkit's%20Blog || fa fa-signal
+  Analyze: https://analyze.purkit.ml/share/3O0Hb21X/Purkit's%20Blog || fa fa-signal
   # My Disk: https://share.purkit.ml/ || fas fa-cloud
   About: /about/ || fas fa-heart
 

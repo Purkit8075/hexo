@@ -81,11 +81,6 @@
   dependencies:
     "sprintf-js" "~1.0.2"
 
-"argparse@^2.0.1":
-  "integrity" "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
-  "resolved" "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz"
-  "version" "2.0.1"
-
 "asap@^2.0.3", "asap@~2.0.3":
   "integrity" "sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY= sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA=="
   "resolved" "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz"
@@ -687,9 +682,9 @@
   "version" "6.0.1"
 
 "hexo@^5.3.0":
-  "integrity" "sha512-4vMDle5GjpMeOVrx0NKoTZCqrmpJVg3wNiNNUVjcoFfcpYcMzQUCZHBtQqLl7BzjJ8x2gs002VQ5yv0ZKtj8Jg=="
-  "resolved" "https://registry.npmjs.org/hexo/-/hexo-5.4.0.tgz"
-  "version" "5.4.0"
+  "integrity" "sha512-Af6mxKwx9byalaffKgiQ8/bZfbXPo2SGEn2Q9hFh++15g15/IulvOhu8lQkJdyZNzmj3hOuSrJdqoUvIr3K/qw=="
+  "resolved" "https://registry.npmjs.org/hexo/-/hexo-5.4.2.tgz"
+  "version" "5.4.2"
   dependencies:
     "abbrev" "^1.1.1"
     "archy" "^1.0.0"
@@ -701,7 +696,7 @@
     "hexo-i18n" "^1.0.0"
     "hexo-log" "^2.0.0"
     "hexo-util" "^2.4.0"
-    "js-yaml" "^4.0.0"
+    "js-yaml" "^3.14.1"
     "micromatch" "^4.0.2"
     "moment" "^2.22.2"
     "moment-timezone" "^0.5.21"
@@ -832,20 +827,13 @@
   "resolved" "https://registry.npmjs.org/js-stringify/-/js-stringify-1.0.2.tgz"
   "version" "1.0.2"
 
-"js-yaml@^3.13.1":
+"js-yaml@^3.13.1", "js-yaml@^3.14.1":
   "integrity" "sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g=="
   "resolved" "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
   "version" "3.14.1"
   dependencies:
     "argparse" "^1.0.7"
     "esprima" "^4.0.0"
-
-"js-yaml@^4.0.0":
-  "integrity" "sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q=="
-  "resolved" "https://registry.npmjs.org/js-yaml/-/js-yaml-4.0.0.tgz"
-  "version" "4.0.0"
-  dependencies:
-    "argparse" "^2.0.1"
 
 "jsonparse@^1.2.0":
   "integrity" "sha1-P02uSpH6wxX3EGL4UhzCOfE2YoA= sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg=="
@@ -1299,7 +1287,7 @@
   "version" "1.1.2"
 
 "sprintf-js@~1.0.2":
-  "integrity" "sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw= sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g=="
+  "integrity" "sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g=="
   "resolved" "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
   "version" "1.0.3"
 
