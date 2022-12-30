@@ -1,12 +1,11 @@
 ---
 title: 留言板
 date: 2022-12-29
+top_img: https://ci.cncn3.cn/83781de84287935f120f037fcfd99d97.png
 ---
 # 留言板
 
 ---
-
-
 
 欢迎来到我的留言板。
 
