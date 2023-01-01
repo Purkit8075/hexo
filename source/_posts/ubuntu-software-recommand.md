@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 软件推荐(持续更新)
+title: Ubuntu 软件推荐
 date: 2022-11-21
 description: 本文分享了我在 Ubuntu 上使用的软件。
 tags: ["Software","Ubuntu"]
@@ -455,4 +455,6 @@ WhitespaceSensitiveMacros:
 
 对于它的下载，您可以在 [Releases 页面](https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases) 进行下载也可以在 [我的网盘](https://share.purkit.ml/Linux%20Software/Ubuntu-share/icalingua_2.7.5_amd64.deb) 进行下载。
 
-因为我对于 `Ubuntu` 的探索也还不够深，所以之后我会在这篇文章中继续推荐软件，欢迎大家关注。
+-------------------------
+
+——END——
