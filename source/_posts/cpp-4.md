@@ -1,7 +1,7 @@
 ---
 title: C++ 教程（四）
 date: 2022-10-22
-description:
+description: 本文介绍 C++ 的循环结构，并且通过制作一个简单计算器的例子来复习之前的知识。
 tags: ["复习","循环结构"]
 categories: "C++ 教程" 
 keywords: ["循环结构"]

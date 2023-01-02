@@ -1,10 +1,10 @@
 ---
 title: C++ 教程（二）
 date: 2022-09-30
-description:
+description: 在这篇博文中，您将学到：字符串的简单用法、 C++ 的输入、如何查看变量所占字节数以及常量的定义和宏的定义方法。
 tags: ["字符串"]
 categories: "C++ 教程"
-keywords: ["字符串","类型转换"]
+keywords: ["字符串","类型转换","const","#define","sizeof","enum"]
 cover: https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png
 ---
 

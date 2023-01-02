@@ -1,7 +1,7 @@
 ---
 title: C++ 教程（六）
 date: 2022-11-06
-description:
+description: 本文是对于前面博文的补充，包括运算符的其它性质、enum 的特性、字符的性质和 C 风格的输入与输出。
 tags: ["C风格","enum","字符","补充"]
 categories: "C++ 教程" 
 keywords: ["enum","字符"]

@@ -1,7 +1,7 @@
 ---
 title: C++ 教程（五）
 date: 2022-10-29
-description:
+description: 本文介绍了 C++ 中的数组、C 风格的字符串和 C++ 的地址与指针的简单用法。
 tags: ["函数","地址","字符串","指针","数组"]
 categories: "C++ 教程" 
 keywords: ["函数","地址","字符串","指针","数组"]

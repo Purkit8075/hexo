@@ -1,7 +1,7 @@
 ---
 title: C++ 教程（三）
 date: 2022-10-15
-description:
+description: 本文介绍了 C++ 中函数的基础知识，和 C++ 中的顺序结构以及分支结构。
 tags: ["函数","分支结构","选择结构"]
 categories: "C++ 教程"
 keywords: ["分支结构","选择结构","函数"]
