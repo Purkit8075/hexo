@@ -86,11 +86,11 @@ go version
 hugo version
 ```
 
-### 注册 `Github`
+### 注册 `GitHub`
 
-打开网站 [Github](https://github.com/) 。
+打开网站 [GitHub](https://github.com/) 。
 
-点击 `Sign up`，按照提示注册 `Github` 账号。
+点击 `Sign up`，按照提示注册 `GitHub` 账号。
 
 **注意：** 不要使用 QQ 邮箱进行注册，据说会有一些限制。
 
@@ -98,7 +98,7 @@ hugo version
 
 打开网站 [Vercel](https://vercel.com/) 。
 
-直接使用 `Github` 登录。
+直接使用 `GitHub` 登录。
 
 至此，所有的准备工作就完成了。接下来上重头戏。
 
@@ -108,7 +108,7 @@ hugo version
 
 在新的界面中，右边有一个 `Clone Template` 。点击 `Browse All Templates →`。点击 `Hugo` 。
 
-此时，需要我们选择一个仓库来存放 `Hugo` 博客。在 `Create Git Repository` 一栏中选择 `Github` 。
+此时，需要我们选择一个仓库来存放 `Hugo` 博客。在 `Create Git Repository` 一栏中选择 `GitHub` 。
 
 输入仓库名称。
 
@@ -129,7 +129,7 @@ git config --global user.email Example-Email
 
 将 `Example-Name` 和 `Example-Email` 分别替换成您自己的用户名和邮箱。
 
-这里的用户名不一定是您 `Github` 上的用户名。这个用户名是您用于 `commit` 时的用户名。
+这里的用户名不一定是您 `GitHub` 上的用户名。这个用户名是您用于 `commit` 时的用户名。
 
 关于 `commit` ，我将马上介绍。
 
@@ -141,7 +141,7 @@ ssh-keygen -t rsa
 
 这里直接一路按 `Enter` 。最后在密钥文件生成的目录下（默认为 `/Home/.ssh` ）打开文件 `id_rsa.pub` 。
 
-复制文件中的所有内容，然后回到 `Github` 。
+复制文件中的所有内容，然后回到 `GitHub` 。
 
 点击右上角自己的头像，然后点击 `Settings` 。
 
@@ -155,7 +155,7 @@ ssh-keygen -t rsa
 
 然后在本地选择一个文件夹，打开终端。这里为了方便，我选择的是桌面文件夹。
 
-这时，我们要用 `Git` 将 `Github` 上的仓库克隆到本地。运行以下命令：
+这时，我们要用 `Git` 将 `GitHub` 上的仓库克隆到本地。运行以下命令：
 
 ```bash
 git clone your-ssh-link
@@ -179,7 +179,7 @@ git clone your-ssh-link
 cd hugo-teach/
 ```
 
-接着打开 `stack` 的 [Github 仓库](https://github.com/CaiJimmy/hugo-theme-stack) 。
+接着打开 `stack` 的 [GitHub 仓库](https://github.com/CaiJimmy/hugo-theme-stack) 。
 
 复制仓库的 `https` 链接。
 
@@ -232,9 +232,9 @@ hugo server
 hugo
 ```
 
-### `Github` 更新
+### `GitHub` 更新
 
-在本地写完文章或者更新完站点的配置之后，我们需要将它们推送到 `Github` 的仓库上。
+在本地写完文章或者更新完站点的配置之后，我们需要将它们推送到 `GitHub` 的仓库上。
 
 如果您是按照上面介绍的方式克隆仓库，那么您只需要在终端输入以下指令：
 

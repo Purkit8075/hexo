@@ -21,7 +21,7 @@ cover: https://ci.cncn3.cn/991b7f2aad8d20e525f0392eaad1e948.png
 
 在开始之前，您需要：
 
-* `Github` 账号
+* `GitHub` 账号
 
 * `Vercel` 账号
 

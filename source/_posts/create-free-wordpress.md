@@ -13,7 +13,7 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 ## 需要的工具
 
 * 一个谷歌账号
-* 一个 Github 账号
+* 一个 GitHub 账号
 * 一个 Pantheon 账号
 * 一个 Freenom 账号
 * 一个 Render 账号
@@ -107,7 +107,7 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 
 ## 使用 `Render` 反代 `Pantheon` 域名
 
-我们注册 `Github` 账号。
+我们注册 `GitHub` 账号。
 
 然后 `import` 这个 [项目](https://github.com/gitiy1/blog) 。建议将仓库设置为私有。
 
@@ -119,7 +119,7 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 
 > 以上部分参考 [YANGTZEUSの](https://dev-yangtzeus.pantheonsite.io/2022/04/12/railway-nginx/) 。
 
-打开 [Render](https://render.com/) ，使用 `Github` 注册并登录。
+打开 [Render](https://render.com/) ，使用 `GitHub` 注册并登录。
 
 选择 `Web Services` 。
 

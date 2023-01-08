@@ -413,7 +413,7 @@ WhitespaceSensitiveMacros:
 
 如果您想要一款跨平台并且包含海量歌曲的音乐软件，那么洛雪音乐助手将是一个不错的选择，除了上述的特点以外，它还有一个最大的特点就是，它的所有音乐都是免费的并且支持下载。
 
-您可以在 `Github` 上找到它： [洛雪音乐助手](https://github.com/lyswhut/lx-music-desktop) 。
+您可以在 `GitHub` 上找到它： [洛雪音乐助手](https://github.com/lyswhut/lx-music-desktop) 。
 
 下载您可以通过 [Releases 页面](https://github.com/lyswhut/lx-music-desktop/releases) 或者 [我的网盘](https://share.purkit.ml/Linux%20Software/Ubuntu-share/lx-music-desktop.v1.22.3.x64.deb) 进行下载。
 
