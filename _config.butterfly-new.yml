@@ -380,7 +380,7 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -388,8 +388,8 @@ chat_hide_show: false
 # chatra
 # https://chatra.io/
 chatra:
-  enable: true
-  id: 2N5XuhKjZ5rkwqy5G
+  enable: false
+  id:
 
 # tidio
 # https://www.tidio.com/
