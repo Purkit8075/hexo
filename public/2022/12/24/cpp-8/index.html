@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="default" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>C++ 教程（八） | Purkit's Blog</title><meta name="author" content="Purkit"><meta name="copyright" content="Purkit"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="本文介绍 C++ 的多维数组以及动态内存分配。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++ 教程（八）">
+<meta property="og:url" content="https://blog.purkit.ml/2022/12/24/cpp-8/index.html">
+<meta property="og:site_name" content="Purkit&#39;s Blog">
+<meta property="og:description" content="本文介绍 C++ 的多维数组以及动态内存分配。">
+<meta property="og:locale">
+<meta property="og:image" content="https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png">
+<meta property="article:published_time" content="2022-12-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-02T08:28:23.639Z">
+<meta property="article:author" content="Purkit">
+<meta property="article:tag" content="指针">
+<meta property="article:tag" content="数组">
+<meta property="article:tag" content="new">
+<meta property="article:tag" content="delete">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png"><link rel="shortcut icon" href="https://ci.cncn3.cn/48ddaee40f5102507d7f08485fed5a72.png"><link rel="canonical" href="https://blog.purkit.ml/2022/12/24/cpp-8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":90,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":200,"languages":{"author":"Author: Purkit","link":"Link: ","source":"Source: Purkit's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'C++ 教程（八）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-02 16:28:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><script async defer data-website-id="83e6aefa-a710-46c1-85f1-26d421ae81ab" src="https://umami.purkit.ml/umami.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/index.xml" title="Purkit's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://ci.cncn3.cn/48ddaee40f5102507d7f08485fed5a72.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-book"></i><span> Articles</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comment</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://umami.purkit.ml/share/tHPC36hx/Purkit's%20Blog"><i class="fa-fw fa fa-signal"></i><span> Analyze</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Purkit's Blog"><span class="site-name">Purkit's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-book"></i><span> Articles</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-comments"></i><span> Comment</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://umami.purkit.ml/share/tHPC36hx/Purkit's%20Blog"><i class="fa-fw fa fa-signal"></i><span> Analyze</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">C++ 教程（八）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-12-23T16:00:00.000Z" title="Created 2022-12-24 00:00:00">2022-12-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-01-02T08:28:23.639Z" title="Updated 2023-01-02 16:28:23">2023-01-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/C-%E6%95%99%E7%A8%8B/">C++ 教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>6min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="C++ 教程（八）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/2022/12/24/cpp-8/#post-comment"><span class="waline-comment-count" data-path="/2022/12/24/cpp-8/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="C-教程（八）"><a href="#C-教程（八）" class="headerlink" title="C++ 教程（八）"></a>C++ 教程（八）</h1><h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>前面我们介绍了一维的数组，即形如 <code>int a[10];</code> 的数组。有的时候我们要用数组来模拟二维座标系，如果这个时候只用一维数组就显得不够直观。</p>
+<p>因此，我们有必要学习多维数组。</p>
+<p>我们以二维数组为例。</p>
+<h3 id="二维数组的创建"><a href="#二维数组的创建" class="headerlink" title="二维数组的创建"></a>二维数组的创建</h3><p>二维数组的声明可以类比一维数组，比如我们要声明一个大小为 <code>10 * 10</code> 的数组 <code>Arr</code> ，其声明形式如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> Arr[ArSize][ArSize] = &#123;<span class="number">0</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>对于二维数组的初始化，我们同样可以使用 <code>= &#123;0&#125;</code> 的这种方式。</p>
+<p>如果要初始化成不同的数据，也可以类比一维数组的操作。如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> Arr[ArSize][ArSize] = &#123;</span><br><span class="line">    &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;,</span><br><span class="line">    &#123;<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>这里只初始化了前两行的前几列，通过这个初始化的方式，可以看出，二维数组实际上是由多个一维数组组成的，对于多维数组，也可以看成由低维数组组成。</p>
+<p>如果要将多维数组清零，同样可以使用 <code>memset()</code> 函数进行。例如：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::<span class="built_in">memset</span>(Arr, <span class="number">0</span>, <span class="built_in">sizeof</span>(Arr));</span><br></pre></td></tr></table></figure>
+
+<h3 id="二维数组的遍历"><a href="#二维数组的遍历" class="headerlink" title="二维数组的遍历"></a>二维数组的遍历</h3><p>对于一维数组，我们使用一层循环进行遍历，那么对于二维数组，我们就需要嵌套一个循环，使用两层循环进行遍历。</p>
+<p>示例程序 8.1</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> Arr[ArSize][ArSize] = &#123;</span><br><span class="line">        &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;,</span><br><span class="line">        &#123;<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; ArSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; ArSize; j++)</span><br><span class="line">            std::cout &lt;&lt; Arr[i][j] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出结果如下：</p>
+<img title="8.1" src="https://ci.cncn3.cn/3d6b47da0b3f826eabd8d5711a5481e2.png" alt="3d6b47da0b3f826eabd8d5711a5481e2.png" data-align="center">
+
+<p>可以看到，未初始化的元素默认未 0 。</p>
+<h2 id="数组与指针"><a href="#数组与指针" class="headerlink" title="数组与指针"></a>数组与指针</h2><p>前面我们介绍了指针与变量和结构体的用法，那么指针与数组的用法有什么不同之处呢？</p>
+<h3 id="数组指针的声明"><a href="#数组指针的声明" class="headerlink" title="数组指针的声明"></a>数组指针的声明</h3><p>我们以声明一个数组 <code>a[4]</code> 和一个指向该数组的指针 <code>*ptr</code> 为例。其声明方式如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">4</span>;</span><br><span class="line"><span class="type">int</span>  a[ArSize] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="type">int</span>* ptr = a;</span><br></pre></td></tr></table></figure>
+
+<p>细心的读者也许已经发现，这里指针的赋值与前面提到的不一样。</p>
+<p>如果是一个 <code>int</code> 类型的变量 <code>x</code> ，那么指针的声明是 <code>int* ptr = &amp;x</code> ，那为什么数组没有使用 <code>&amp;</code> 符号呢？</p>
+<p>实际上，数组的名称即本例中的 <code>a</code> 就是代表数组第一个元素的地址。</p>
+<p>所以，<code>a</code> 实际上等效于 <code>&amp;a[0]</code> 。因此，声明数组指针时不需要使用 <code>&amp;</code> 符号。</p>
+<h3 id="用数组指针访问数组元素"><a href="#用数组指针访问数组元素" class="headerlink" title="用数组指针访问数组元素"></a>用数组指针访问数组元素</h3><p>知道如何声明数组指针之后，那要怎么访问数组的每一个元素呢？</p>
+<p>对于数组中的元素，它们的存储是连续的，即它们的地址是相邻的。</p>
+<p>而指针指向地址，如果对指针进行加减的操作，实际上就是改变指针指向的地址。</p>
+<p>我们通过一张图片来直观感受以下：</p>
+<img src="https://ci.cncn3.cn/85d6fb706adc6bab9ce6be9d370e0445.png" title="" alt="85d6fb706adc6bab9ce6be9d370e0445.png" data-align="center">
+
+<p>从上图可以看出使用指针访问数组的语法。我们用一个使用该语法输出数组中所有元素的例子来加深理解。</p>
+<p>示例程序 8.2</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">4</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span>  a[ArSize] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line">    <span class="type">int</span>* ptr = a;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; ArSize; i++)</span><br><span class="line">        std::cout &lt;&lt; *(ptr + i) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="初探-new-和-delete"><a href="#初探-new-和-delete" class="headerlink" title="初探 new 和 delete"></a>初探 <code>new</code> 和 <code>delete</code></h2><p>前面介绍过，指针不能指向未知的地址。即你不能这么写 <code>int* ptr = 5;</code> 。</p>
+<p>但如果我想声明一个指针，并且它的值是 5 ，那要怎么做呢？</p>
+<p>指针是指向一个地址，如果我们可以将一块未分配的地址分配出来并用指针指向它，这样就可以实现我们的目的了。</p>
+<p>而 <code>C++</code> 也提供这样的方法，即使用 <code>new</code> 来分配内存。</p>
+<p>因此我们可以将 <code>int* ptr = 5;</code> 改写成 <code>int* ptr = new int(5);</code> 。</p>
+<p>其中，后面的 <code>int</code> 指定了类型，括号中是要赋的值。</p>
+<p>当我们使用完动态分配的内存之后，我们可以使用 <code>delete</code> 将它 “删除” 。</p>
+<p>比如 <code>delete ptr</code> 。此时，<code>*ptr</code> 指向的就是为分配的地址。</p>
+<p>我们用一个例子来加深理解。</p>
+<p>示例程序 8.3</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">using</span> std::cout;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span>* ptr = <span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">5</span>);</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Now *ptr = &quot;</span> &lt;&lt; *ptr &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    <span class="keyword">delete</span> ptr;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;After delete,*ptr = &quot;</span> &lt;&lt; *ptr &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注意：</strong> 不要连续将一个指针 <code>delete</code> 两次，那样的结果是危险的。</p>
+</blockquote>
+<p>当 <code>delete</code> 一个指针之后，您可以再次使用 <code>new</code> 来给它分配内存。</p>
+<h2 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h2><p>到目前为止，我们接触的数组都是大小确定的数组。但在实际应用中，如果数组太大而实际使用又太少，那就会导致浪费内存；反之，如果数组太小，那也会导致程序运行错误。</p>
+<p>相比于在程序执行之前定义数组大小，能不能在程序执行的阶段来确定数组的大小并创建呢？</p>
+<p>这时，我们就要使用动态数组了。</p>
+<p>动态数组实际上就是数组指针的动态内存分配。</p>
+<p>类比上面的方法，我们声明一个指针 <code>*ptr</code> 为数组指针，它的大小为 <code>5</code> ，其声明如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span>* ptr = <span class="keyword">new</span> <span class="type">int</span>[ArSize];</span><br></pre></td></tr></table></figure>
+
+<p>如果要初始化，则直接在它后面使用大括号 <code>&#123;&#125;</code> 初始化，例如：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> ArSize = <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span>*      ptr = <span class="keyword">new</span> <span class="type">int</span>[ArSize] &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>如果要用 <code>delete</code> 删除该指针，它的语法如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span>[] ptr;</span><br></pre></td></tr></table></figure>
+
+<p>那么，为什么说它是动态的数组呢？</p>
+<p>因为，在上面的例子中，<code>ArSize</code> 可以是一个变量，因为 <code>int* ptr = new int[ArSize]</code> 实际上是申请内存，这就意为着，<code>ArSize</code> 可以是一个变量。</p>
+<p>由此，我们就实现了动态数组。下面看一个具体例子：</p>
+<p>示例程序 8.4</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">using</span> std::cout;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> ArSize = <span class="number">0</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Please input array\&#x27;s size: &quot;</span>;</span><br><span class="line"></span><br><span class="line">    std::cin &gt;&gt; ArSize;    <span class="comment">//创建动态数组</span></span><br><span class="line">    <span class="type">int</span>* arr = <span class="keyword">new</span> <span class="type">int</span>[ArSize] &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Please input numbers:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; ArSize; i++)</span><br><span class="line">        std::cin &gt;&gt; *(arr + i);</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Array is:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; ArSize; i++)</span><br><span class="line">        cout &lt;&lt; *(arr + i) &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="keyword">delete</span>[] arr;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下：</p>
+<img src="https://ci.cncn3.cn/724233959d214623e3e4aaa8a0c78a65.png" title="" alt="724233959d214623e3e4aaa8a0c78a65.png" data-align="center">
+
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>用 <code>new</code> 分配的内存要用 <code>delete</code> 及时清除掉。</p>
+<p>同时，不要对同一个指针连续 <code>delete</code> 两次。</p>
+<hr>
+<p>——END——</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://blog.purkit.ml">Purkit</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://blog.purkit.ml/2022/12/24/cpp-8/">https://blog.purkit.ml/2022/12/24/cpp-8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8C%87%E9%92%88/">指针</a><a class="post-meta__tags" href="/tags/%E6%95%B0%E7%BB%84/">数组</a><a class="post-meta__tags" href="/tags/new/">new</a><a class="post-meta__tags" href="/tags/delete/">delete</a></div><div class="post_share"><div class="social-share" data-image="https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/11/21/ubuntu-software-recommand/" title="Ubuntu 软件推荐"><img class="cover" src="https://ci.cncn3.cn/1e2854aef14210752eb7d9267e08675a.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Ubuntu 软件推荐</div></div></a></div><div class="next-post pull-right"><a href="/2022/12/25/create-free-wordpress/" title="Pantheon + Render 搭建免费 WordPress 博客"><img class="cover" src="https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Pantheon + Render 搭建免费 WordPress 博客</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/10/29/cpp-5/" title="C++ 教程（五）"><img class="cover" src="https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-29</div><div class="title">C++ 教程（五）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://ci.cncn3.cn/48ddaee40f5102507d7f08485fed5a72.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Purkit</div><div class="author-info__description">Welcome to Purkit's Blog!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Purkit8075" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:purkit@purkit.ml" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://feeds.pub/feed/https%3A%2F%2Fblog.purkit.ml%2Findex.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">My Blog starts on Nov 24,2022.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">C++ 教程（八）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">1.1.</span> <span class="toc-text">多维数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.1.</span> <span class="toc-text">二维数组的创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E9%81%8D%E5%8E%86"><span class="toc-number">1.1.2.</span> <span class="toc-text">二维数组的遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88"><span class="toc-number">1.2.</span> <span class="toc-text">数组与指针</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%8C%87%E9%92%88%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="toc-number">1.2.1.</span> <span class="toc-text">数组指针的声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%95%B0%E7%BB%84%E6%8C%87%E9%92%88%E8%AE%BF%E9%97%AE%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0"><span class="toc-number">1.2.2.</span> <span class="toc-text">用数组指针访问数组元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E6%8E%A2-new-%E5%92%8C-delete"><span class="toc-number">1.3.</span> <span class="toc-text">初探 new 和 delete</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.</span> <span class="toc-text">动态数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">1.5.</span> <span class="toc-text">写在最后</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/31/add-waline-to-butterfly/" title="使用 Waline 作为 Butterfly 主题的评论系统"><img src="https://ci.cncn3.cn/991b7f2aad8d20e525f0392eaad1e948.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 Waline 作为 Butterfly 主题的评论系统"/></a><div class="content"><a class="title" href="/2022/12/31/add-waline-to-butterfly/" title="使用 Waline 作为 Butterfly 主题的评论系统">使用 Waline 作为 Butterfly 主题的评论系统</a><time datetime="2022-12-30T16:00:00.000Z" title="Created 2022-12-31 00:00:00">2022-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/25/create-free-wordpress/" title="Pantheon + Render 搭建免费 WordPress 博客"><img src="https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Pantheon + Render 搭建免费 WordPress 博客"/></a><div class="content"><a class="title" href="/2022/12/25/create-free-wordpress/" title="Pantheon + Render 搭建免费 WordPress 博客">Pantheon + Render 搭建免费 WordPress 博客</a><time datetime="2022-12-24T16:00:00.000Z" title="Created 2022-12-25 00:00:00">2022-12-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/24/cpp-8/" title="C++ 教程（八）"><img src="https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++ 教程（八）"/></a><div class="content"><a class="title" href="/2022/12/24/cpp-8/" title="C++ 教程（八）">C++ 教程（八）</a><time datetime="2022-12-23T16:00:00.000Z" title="Created 2022-12-24 00:00:00">2022-12-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/21/ubuntu-software-recommand/" title="Ubuntu 软件推荐"><img src="https://ci.cncn3.cn/1e2854aef14210752eb7d9267e08675a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ubuntu 软件推荐"/></a><div class="content"><a class="title" href="/2022/11/21/ubuntu-software-recommand/" title="Ubuntu 软件推荐">Ubuntu 软件推荐</a><time datetime="2022-11-20T16:00:00.000Z" title="Created 2022-11-21 00:00:00">2022-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/cpp-7/" title="C++ 教程（七）"><img src="https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++ 教程（七）"/></a><div class="content"><a class="title" href="/2022/11/18/cpp-7/" title="C++ 教程（七）">C++ 教程（七）</a><time datetime="2022-11-17T16:00:00.000Z" title="Created 2022-11-18 00:00:00">2022-11-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Purkit</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional Chinese And Simplified Chinese">简</button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadWaline () {
+  function initWaline () {
+    const waline = Waline.init(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://waline.purkit.ml/',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, null))
+  }
+
+  const walineCSSLoad = document.getElementById('waline-css')
+
+  if (typeof Waline === 'object') {
+    walineCSSLoad ? initWaline() : getCSS('https://cdnjs.cloudflare.com/ajax/libs/waline/2.14.7/waline.min.css','waline-css').then(initWaline)
+  }
+  else {
+    getCSS('https://cdnjs.cloudflare.com/ajax/libs/waline/2.14.7/waline.min.css','waline-css').then(() => {
+      getScript('https://cdnjs.cloudflare.com/ajax/libs/waline/2.14.7/waline.min.js').then(initWaline)
+    })
+  }
+}
+
+if ('Waline' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Purkit&#39;s Blog</title>
+  <icon>https://ci.cncn3.cn/48ddaee40f5102507d7f08485fed5a72.png</icon>
+  
+  <link href="https://blog.purkit.ml/index.xml" rel="self"/>
+  
+  <link href="https://blog.purkit.ml/"/>
+  <updated>2023-01-08T04:28:59.044Z</updated>
+  <id>https://blog.purkit.ml/</id>
+  
+  <author>
+    <name>Purkit</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 Waline 作为 Butterfly 主题的评论系统</title>
+    <link href="https://blog.purkit.ml/2022/12/31/add-waline-to-butterfly/"/>
+    <id>https://blog.purkit.ml/2022/12/31/add-waline-to-butterfly/</id>
+    <published>2022-12-30T16:00:00.000Z</published>
+    <updated>2023-01-08T04:28:59.044Z</updated>
+    
+    
+    <summary type="html">本文介绍如何使用 Waline +Vercel + bit.io 作为 Butterfly 主题的评论系统。</summary>
+    
+    
+    
+    <category term="网站" scheme="https://blog.purkit.ml/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="Waline" scheme="https://blog.purkit.ml/tags/Waline/"/>
+    
+    <category term="Vercel" scheme="https://blog.purkit.ml/tags/Vercel/"/>
+    
+    <category term="bit.io" scheme="https://blog.purkit.ml/tags/bit-io/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pantheon + Render 搭建免费 WordPress 博客</title>
+    <link href="https://blog.purkit.ml/2022/12/25/create-free-wordpress/"/>
+    <id>https://blog.purkit.ml/2022/12/25/create-free-wordpress/</id>
+    <published>2022-12-24T16:00:00.000Z</published>
+    <updated>2023-01-08T04:28:59.152Z</updated>
+    
+    
+    <summary type="html">从零开始零成本搭建 WordPress 博客。</summary>
+    
+    
+    
+    <category term="网站" scheme="https://blog.purkit.ml/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="WordPress" scheme="https://blog.purkit.ml/tags/WordPress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（八）</title>
+    <link href="https://blog.purkit.ml/2022/12/24/cpp-8/"/>
+    <id>https://blog.purkit.ml/2022/12/24/cpp-8/</id>
+    <published>2022-12-23T16:00:00.000Z</published>
+    <updated>2023-01-02T08:28:23.639Z</updated>
+    
+    
+    <summary type="html">本文介绍 C++ 的多维数组以及动态内存分配。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="指针" scheme="https://blog.purkit.ml/tags/%E6%8C%87%E9%92%88/"/>
+    
+    <category term="数组" scheme="https://blog.purkit.ml/tags/%E6%95%B0%E7%BB%84/"/>
+    
+    <category term="new" scheme="https://blog.purkit.ml/tags/new/"/>
+    
+    <category term="delete" scheme="https://blog.purkit.ml/tags/delete/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 软件推荐</title>
+    <link href="https://blog.purkit.ml/2022/11/21/ubuntu-software-recommand/"/>
+    <id>https://blog.purkit.ml/2022/11/21/ubuntu-software-recommand/</id>
+    <published>2022-11-20T16:00:00.000Z</published>
+    <updated>2023-01-08T04:28:59.160Z</updated>
+    
+    
+    <summary type="html">本文分享了我在 Ubuntu 上使用的软件。</summary>
+    
+    
+    
+    <category term="Ubuntu" scheme="https://blog.purkit.ml/categories/Ubuntu/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://blog.purkit.ml/tags/Ubuntu/"/>
+    
+    <category term="Software" scheme="https://blog.purkit.ml/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（七）</title>
+    <link href="https://blog.purkit.ml/2022/11/18/cpp-7/"/>
+    <id>https://blog.purkit.ml/2022/11/18/cpp-7/</id>
+    <published>2022-11-17T16:00:00.000Z</published>
+    <updated>2022-12-24T06:24:29.086Z</updated>
+    
+    
+    <summary type="html">本文将介绍 C++ 中的结构体以及共用体的用法，让读者对面向对象编程有个初步的了解。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="结构体" scheme="https://blog.purkit.ml/tags/%E7%BB%93%E6%9E%84%E4%BD%93/"/>
+    
+    <category term="共用体" scheme="https://blog.purkit.ml/tags/%E5%85%B1%E7%94%A8%E4%BD%93/"/>
+    
+    <category term="struct" scheme="https://blog.purkit.ml/tags/struct/"/>
+    
+    <category term="union" scheme="https://blog.purkit.ml/tags/union/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu平台下使用Vercel+Hugo搭建静态博客</title>
+    <link href="https://blog.purkit.ml/2022/11/12/hello-hugo/"/>
+    <id>https://blog.purkit.ml/2022/11/12/hello-hugo/</id>
+    <published>2022-11-11T16:00:00.000Z</published>
+    <updated>2023-01-08T04:28:59.120Z</updated>
+    
+    
+    <summary type="html">从零开始搭建一个静态的个人博客。</summary>
+    
+    
+    
+    <category term="网站" scheme="https://blog.purkit.ml/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="Vercel" scheme="https://blog.purkit.ml/tags/Vercel/"/>
+    
+    <category term="博客" scheme="https://blog.purkit.ml/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Ubuntu" scheme="https://blog.purkit.ml/tags/Ubuntu/"/>
+    
+    <category term="Hugo" scheme="https://blog.purkit.ml/tags/Hugo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（六）</title>
+    <link href="https://blog.purkit.ml/2022/11/06/cpp-6/"/>
+    <id>https://blog.purkit.ml/2022/11/06/cpp-6/</id>
+    <published>2022-11-05T16:00:00.000Z</published>
+    <updated>2023-01-02T08:27:50.467Z</updated>
+    
+    
+    <summary type="html">本文是对于前面博文的补充，包括运算符的其它性质、enum 的特性、字符的性质和 C 风格的输入与输出。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="C风格" scheme="https://blog.purkit.ml/tags/C%E9%A3%8E%E6%A0%BC/"/>
+    
+    <category term="enum" scheme="https://blog.purkit.ml/tags/enum/"/>
+    
+    <category term="字符" scheme="https://blog.purkit.ml/tags/%E5%AD%97%E7%AC%A6/"/>
+    
+    <category term="补充" scheme="https://blog.purkit.ml/tags/%E8%A1%A5%E5%85%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（五）</title>
+    <link href="https://blog.purkit.ml/2022/10/29/cpp-5/"/>
+    <id>https://blog.purkit.ml/2022/10/29/cpp-5/</id>
+    <published>2022-10-28T16:00:00.000Z</published>
+    <updated>2023-01-02T08:26:31.299Z</updated>
+    
+    
+    <summary type="html">本文介绍了 C++ 中的数组、C 风格的字符串和 C++ 的地址与指针的简单用法。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="字符串" scheme="https://blog.purkit.ml/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="函数" scheme="https://blog.purkit.ml/tags/%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="地址" scheme="https://blog.purkit.ml/tags/%E5%9C%B0%E5%9D%80/"/>
+    
+    <category term="指针" scheme="https://blog.purkit.ml/tags/%E6%8C%87%E9%92%88/"/>
+    
+    <category term="数组" scheme="https://blog.purkit.ml/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（四）</title>
+    <link href="https://blog.purkit.ml/2022/10/22/cpp-4/"/>
+    <id>https://blog.purkit.ml/2022/10/22/cpp-4/</id>
+    <published>2022-10-21T16:00:00.000Z</published>
+    <updated>2023-01-02T08:24:40.475Z</updated>
+    
+    
+    <summary type="html">本文介绍 C++ 的循环结构，并且通过制作一个简单计算器的例子来复习之前的知识。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="复习" scheme="https://blog.purkit.ml/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="循环结构" scheme="https://blog.purkit.ml/tags/%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（三）</title>
+    <link href="https://blog.purkit.ml/2022/10/15/cpp-3/"/>
+    <id>https://blog.purkit.ml/2022/10/15/cpp-3/</id>
+    <published>2022-10-14T16:00:00.000Z</published>
+    <updated>2023-01-02T08:23:32.410Z</updated>
+    
+    
+    <summary type="html">本文介绍了 C++ 中函数的基础知识，和 C++ 中的顺序结构以及分支结构。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="函数" scheme="https://blog.purkit.ml/tags/%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="分支结构" scheme="https://blog.purkit.ml/tags/%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="选择结构" scheme="https://blog.purkit.ml/tags/%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（二）</title>
+    <link href="https://blog.purkit.ml/2022/09/30/cpp-2/"/>
+    <id>https://blog.purkit.ml/2022/09/30/cpp-2/</id>
+    <published>2022-09-29T16:00:00.000Z</published>
+    <updated>2023-01-02T08:28:06.463Z</updated>
+    
+    
+    <summary type="html">在这篇博文中，您将学到：字符串的简单用法、 C++ 的输入、如何查看变量所占字节数以及常量的定义和宏的定义方法。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="字符串" scheme="https://blog.purkit.ml/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 教程（一）</title>
+    <link href="https://blog.purkit.ml/2022/09/23/cpp-1/"/>
+    <id>https://blog.purkit.ml/2022/09/23/cpp-1/</id>
+    <published>2022-09-22T16:00:00.000Z</published>
+    <updated>2023-01-02T08:14:15.821Z</updated>
+    
+    
+    <summary type="html">本文介绍 C++ 的输出方法和变量与运算符的初级知识。</summary>
+    
+    
+    
+    <category term="C++ 教程" scheme="https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="变量" scheme="https://blog.purkit.ml/tags/%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="输出" scheme="https://blog.purkit.ml/tags/%E8%BE%93%E5%87%BA/"/>
+    
+  </entry>
+  
+</feed>
