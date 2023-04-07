@@ -674,7 +674,7 @@ aside:
       link: https://github.com/Purkit8075
   card_announcement:
     enable: true
-    content: My Blog starts on Nov 24,2022.
+    content: My Blog started on Nov 24,2022.
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
