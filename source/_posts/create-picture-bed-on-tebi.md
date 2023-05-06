@@ -17,6 +17,16 @@ cover: https://img.purkit.ml/tebi-and-picgo
 
 图床正如大多数东西一样，只有掌握在自己手上才是最安心的。
 
+## 为什么选择 `Tebi`
+
+`Tebi` 的免费计划提供 **50GB** 的存储空间和每月 **250GB** 的流量，并支持无限上传文件。
+
+`Tebi` 使用分布式存储系统。这在一定程度上保证了您的图片的安全性，也优化了不同地区用户的体验。
+
+以上这些特点对于搭建图床是十分友好的。因此我使用 `Tebi` 搭建图床。
+
+> `Tebi` 的更多特点请访问 [Tebi 官网](https://tebi.io/) 进行查看。
+
 ## 准备工作
 
 * 一个邮箱
@@ -32,8 +42,6 @@ cover: https://img.purkit.ml/tebi-and-picgo
 <img title="" src="https://img.purkit.ml/ADD%20BUCKET" alt="" data-align="center" width="596">
 
 接着添加 `DNS` 域名解析。给您的域名添加一个 `CNAME` ，`Target` 填 `您的域名 + .s3.tebi.io` 。例如 `img.purkit.ml` 就填 `img.purkit.ml.s3.tebi.io` 。
-
-
 
 然后回到 `Tebi` 。点击左边的 `Keys` 。接着 `ADD KEY` （输入框中 `Optional key comment` 填不填都可以）。
 
@@ -99,8 +107,6 @@ cover: https://img.purkit.ml/tebi-and-picgo
 
 > 来源：[GitHub PicGo S3 插件](https://github.com/wayjam/picgo-plugin-s3) 。
 
-
-
 `地区` 和 `自定义节点` 都填写 `s3.tebi.io` 即可。`自定义域名` 填写您的图床域名，注意 `https://` 。
 
 最后将下方的 3 个选项全部勾选。点击 `确定` 进行保存。
@@ -112,5 +118,3 @@ cover: https://img.purkit.ml/tebi-and-picgo
 --------------------
 
 ——END——
-
-
