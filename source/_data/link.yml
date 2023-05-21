@@ -9,19 +9,7 @@
       link: https://www.gelith.top
       avatar: https://ci.cncn3.cn/Pdah.jpg
       descr: 一个爱分享的小伙伴
-
-- class_name: 镜像站
-  class_desc: 我的一些镜像站。
-  link_list:
-    - name: Wikipedia
-      link: https://wiki.tikrup.ml/
-      avatar: https://ci.cncn3.cn/86a993fee71feb8dfa356313559adf9f.png
-      descr: 自由的百科全书
-    - name: Google
-      link: https://google.tikrup.ml/
-      avatar: https://ci.cncn3.cn/7711ed499f7cf5bffc6598ae93033130.png
-      descr: 全球最大的搜索引擎
-    # - name: Twitter
-    #   link: https://twitter.com/
-    #   avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-    #   descr: 社交分享平台
+    - name: Medi's Space
+      link: https://medihbt.github.io/
+      descr: I'm Medi. This is Me.
+      avatar: https://medihbt.github.io/img/avatar.png
