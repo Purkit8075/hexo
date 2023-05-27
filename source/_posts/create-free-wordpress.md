@@ -8,7 +8,12 @@ keywords: ["WordPress","反代","免费"]
 cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
     # C++ 教程：
 ---
+
 # 从零开始零成本搭建 WordPress 博客
+
+> 写在前面：
+> 
+> 本方案由 [Yonzlich](https://yzlab.ml/) 提供，感谢他提供该方案。
 
 ## 需要的工具
 
@@ -117,7 +122,7 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 
 <img src="https://ci.cncn3.cn/2a450b80865f85bf0bf9fb49baa6a9f1.png" title="" alt="2a450b80865f85bf0bf9fb49baa6a9f1.png" data-align="center">
 
-> 以上部分参考 [YANGTZEUSの](https://dev-yangtzeus.pantheonsite.io/2022/04/12/railway-nginx/) 。
+> 以上部分参考 [Yonzlich](https://note.yzlab.ml/zh/articals/render-nginx) 。
 
 打开 [Render](https://render.com/) ，使用 `GitHub` 注册并登录。
 
@@ -140,6 +145,8 @@ cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
 * 每三个月都要到 `Pantheon`  中进行一次 `commit` ，否则您的博客会被暂时停止，数据不会丢失。
 * `Render` 的免费账户一个月的服务时间一共只有 750 小时，这就意为着，您只能在免费账号中添加一个项目。如果时间用完，那么您的项目将会被停止。
 
----
+> 最后再次衷心感谢 [Yonzlich](https://yzlab.ml/) 提供该方案！
+
+-----------------------------
 
 ——END——

@@ -11,6 +11,8 @@ cover: https://img.purkit.ml/tebi-and-picgo
 
 # 使用 `Tebi` 搭建图床
 
+> 感谢 [Yonzlich](https://yzlab.ml) 提供该方案。
+
 ## 前言
 
 如果您还在用第三方图床或者没有图床可用，那您不妨参考这篇文章自行搭建一个免费的个人的图床。
