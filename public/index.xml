@@ -6,7 +6,7 @@
   <link href="https://blog.purkit.ml/index.xml" rel="self"/>
   
   <link href="https://blog.purkit.ml/"/>
-  <updated>2023-05-27T07:22:09.820Z</updated>
+  <updated>2023-06-05T16:13:20.157Z</updated>
   <id>https://blog.purkit.ml/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>凯撒密码原理及其 C++ 实现</title>
+    <link href="https://blog.purkit.ml/2023/06/05/caesar-code/"/>
+    <id>https://blog.purkit.ml/2023/06/05/caesar-code/</id>
+    <published>2023-06-04T16:00:00.000Z</published>
+    <updated>2023-06-05T16:13:20.157Z</updated>
+    
+    
+    <summary type="html">本文介绍凯撒密码原理并使用 C++ 实现其加密和解密。</summary>
+    
+    
+    
+    <category term="Cryptography" scheme="https://blog.purkit.ml/categories/Cryptography/"/>
+    
+    
+    <category term="Caesar" scheme="https://blog.purkit.ml/tags/Caesar/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 Tebi + PicGo 搭建图床</title>
