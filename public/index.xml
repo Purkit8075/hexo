@@ -6,7 +6,7 @@
   <link href="https://blog.purkit.ml/index.xml" rel="self"/>
   
   <link href="https://blog.purkit.ml/"/>
-  <updated>2023-06-05T16:13:20.157Z</updated>
+  <updated>2023-06-05T16:15:34.948Z</updated>
   <id>https://blog.purkit.ml/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://blog.purkit.ml/2023/06/05/caesar-code/"/>
     <id>https://blog.purkit.ml/2023/06/05/caesar-code/</id>
     <published>2023-06-04T16:00:00.000Z</published>
-    <updated>2023-06-05T16:13:20.157Z</updated>
+    <updated>2023-06-05T16:15:34.948Z</updated>
     
     
     <summary type="html">本文介绍凯撒密码原理并使用 C++ 实现其加密和解密。</summary>
     
     
     
-    <category term="Cryptography" scheme="https://blog.purkit.ml/categories/Cryptography/"/>
+    <category term="密码学" scheme="https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
     
     <category term="Caesar" scheme="https://blog.purkit.ml/tags/Caesar/"/>
