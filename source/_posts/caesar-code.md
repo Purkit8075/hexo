@@ -5,7 +5,7 @@ description: 本文介绍凯撒密码原理并使用 C++ 实现其加密和解�
 tags: ["Caesar"]
 categories: "密码学"
 keywords: ["Caesar","凯撒密码"]
-cover: https://img.purkit.ml/caesar_cover.png
+cover: https://img.purkit.ml/caesar-cover
     # C++ 教程： 
 ---
 
@@ -64,8 +64,8 @@ using std::string;
 class Caesar
 {
 public:
-	string EnCode(string PlainText, int index = 4);
-	string DeCode(string CipherText, int index = 4);
+    string EnCode(string PlainText, int index = 4);
+    string DeCode(string CipherText, int index = 4);
 };
 
 #endif //!_CAESAR_H_
@@ -82,19 +82,19 @@ public:
 ```cpp
 string Caesar::EnCode(string PlainText, int index)
 {
-	string CipherText = "";
-	index %= 26;
-	for (int i = 0; i < PlainText.length(); i++)
-	{
-		if (!std::isalpha(PlainText[i]))
-		{
-			CipherText += PlainText[i];
-			continue;
-		}
-		CipherText +=
-		    (std::toupper(PlainText[i]) - 'A' + index + 26) % 26 + 'A';
-	}
-	return CipherText;
+    string CipherText = "";
+    index %= 26;
+    for (int i = 0; i < PlainText.length(); i++)
+    {
+        if (!std::isalpha(PlainText[i]))
+        {
+            CipherText += PlainText[i];
+            continue;
+        }
+        CipherText +=
+            (std::toupper(PlainText[i]) - 'A' + index + 26) % 26 + 'A';
+    }
+    return CipherText;
 }
 ```
 
@@ -137,8 +137,8 @@ using std::string;
 class Caesar
 {
 public:
-	string EnCode(string PlainText, int index = 4);
-	string DeCode(string CipherText, int index = 4);
+    string EnCode(string PlainText, int index = 4);
+    string DeCode(string CipherText, int index = 4);
 };
 
 #endif //!_CAESAR_H_
@@ -151,37 +151,37 @@ public:
 
 string Caesar::EnCode(string PlainText, int index)
 {
-	string CipherText = "";
-	index %= 26;
-	for (int i = 0; i < PlainText.length(); i++)
-	{
-		if (!std::isalpha(PlainText[i])) // ignore non-alphabetic
-		{
-			CipherText += PlainText[i];
-			continue;
-		}
-		CipherText +=
-		    (std::toupper(PlainText[i]) - 'A' + index + 26) % 26 + 'A';
-	}
-	return CipherText;
+    string CipherText = "";
+    index %= 26;
+    for (int i = 0; i < PlainText.length(); i++)
+    {
+        if (!std::isalpha(PlainText[i])) // ignore non-alphabetic
+        {
+            CipherText += PlainText[i];
+            continue;
+        }
+        CipherText +=
+            (std::toupper(PlainText[i]) - 'A' + index + 26) % 26 + 'A';
+    }
+    return CipherText;
 }
 
 string Caesar::DeCode(string CipherText, int index)
 {
-	string PlainText = "";
-	index %= 26;
-	for (int i = 0; i < CipherText.length(); i++)
-	{
-		if (!std::isalpha(CipherText[i])) // ignore non-alphabetic
-		{
-			PlainText += CipherText[i];
-			continue;
-		}
-		char ch = (std::toupper(CipherText[i]) - 'A' - index + 26) % 26 + 'A';
+    string PlainText = "";
+    index %= 26;
+    for (int i = 0; i < CipherText.length(); i++)
+    {
+        if (!std::isalpha(CipherText[i])) // ignore non-alphabetic
+        {
+            PlainText += CipherText[i];
+            continue;
+        }
+        char ch = (std::toupper(CipherText[i]) - 'A' - index + 26) % 26 + 'A';
 
-		PlainText += ch;
-	}
-	return PlainText;
+        PlainText += ch;
+    }
+    return PlainText;
 }
 ```
 
@@ -194,20 +194,20 @@ string Caesar::DeCode(string CipherText, int index)
 
 int main(void)
 {
-	using std::cout;
+    using std::cout;
 
-	std::string s1 = "abc";
-	std::string s2 = "xyz";
+    std::string s1 = "abc";
+    std::string s2 = "xyz";
 
-	Caesar caesar;
+    Caesar caesar;
 
-	cout << caesar.EnCode(s1) << '\n';
-	cout << caesar.DeCode(caesar.EnCode(s1)) << '\n';
+    cout << caesar.EnCode(s1) << '\n';
+    cout << caesar.DeCode(caesar.EnCode(s1)) << '\n';
 
-	cout << caesar.EnCode(s2, -5) << '\n';
-	cout << caesar.DeCode(caesar.EnCode(s2, -5), -5) << '\n';
+    cout << caesar.EnCode(s2, -5) << '\n';
+    cout << caesar.DeCode(caesar.EnCode(s2, -5), -5) << '\n';
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -219,8 +219,6 @@ ABC
 STU
 XYZ
 ```
-
-
 
 ------------------
 
