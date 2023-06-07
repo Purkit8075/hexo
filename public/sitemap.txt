@@ -19,10 +19,10 @@ https://blog.purkit.ml/link/index.html
 https://blog.purkit.ml/tags/index.html
 https://blog.purkit.ml/categories/index.html
 https://blog.purkit.ml/
-https://blog.purkit.ml/tags/Caesar/
 https://blog.purkit.ml/tags/Waline/
 https://blog.purkit.ml/tags/Vercel/
 https://blog.purkit.ml/tags/bit-io/
+https://blog.purkit.ml/tags/Caesar/
 https://blog.purkit.ml/tags/%E5%8F%98%E9%87%8F/
 https://blog.purkit.ml/tags/%E8%BE%93%E5%87%BA/
 https://blog.purkit.ml/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/
@@ -51,7 +51,7 @@ https://blog.purkit.ml/tags/%E5%8D%9A%E5%AE%A2/
 https://blog.purkit.ml/tags/Ubuntu/
 https://blog.purkit.ml/tags/Hugo/
 https://blog.purkit.ml/tags/Software/
-https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/
 https://blog.purkit.ml/categories/%E7%BD%91%E7%AB%99/
+https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/
 https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/
 https://blog.purkit.ml/categories/Ubuntu/
