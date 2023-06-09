@@ -6,7 +6,7 @@
   <link href="https://blog.purkit.ml/index.xml" rel="self"/>
   
   <link href="https://blog.purkit.ml/"/>
-  <updated>2023-06-07T12:46:47.042Z</updated>
+  <updated>2023-06-09T05:56:40.292Z</updated>
   <id>https://blog.purkit.ml/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Playfair 密码原理以及 C++ 实现</title>
+    <link href="https://blog.purkit.ml/2023/06/09/playfair-code/"/>
+    <id>https://blog.purkit.ml/2023/06/09/playfair-code/</id>
+    <published>2023-06-08T16:00:00.000Z</published>
+    <updated>2023-06-09T05:56:40.292Z</updated>
+    
+    
+    <summary type="html">本文介绍分析了 Playfair 密码及其 C++ 实现。</summary>
+    
+    
+    
+    <category term="密码学" scheme="https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+    
+    <category term="Playfair" scheme="https://blog.purkit.ml/tags/Playfair/"/>
+    
+  </entry>
   
   <entry>
     <title>凯撒密码原理及其 C++ 实现</title>
