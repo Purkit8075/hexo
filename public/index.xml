@@ -6,7 +6,7 @@
   <link href="https://blog.purkit.ml/index.xml" rel="self"/>
   
   <link href="https://blog.purkit.ml/"/>
-  <updated>2023-06-09T05:56:40.292Z</updated>
+  <updated>2023-06-09T05:57:16.774Z</updated>
   <id>https://blog.purkit.ml/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.purkit.ml/2023/06/09/playfair-code/"/>
     <id>https://blog.purkit.ml/2023/06/09/playfair-code/</id>
     <published>2023-06-08T16:00:00.000Z</published>
-    <updated>2023-06-09T05:56:40.292Z</updated>
+    <updated>2023-06-09T05:57:16.774Z</updated>
     
     
     <summary type="html">本文介绍分析了 Playfair 密码及其 C++ 实现。</summary>

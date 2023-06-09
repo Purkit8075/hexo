@@ -317,7 +317,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.purkit.ml/ # Waline server address url
+  serverURL: https://waline.purkit.ml # Waline server address url
   bg: # waline background
   pageview: false
   option:
@@ -718,7 +718,7 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
