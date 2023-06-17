@@ -6,7 +6,7 @@
   <link href="https://blog.purkit.ml/index.xml" rel="self"/>
   
   <link href="https://blog.purkit.ml/"/>
-  <updated>2023-06-09T05:57:16.774Z</updated>
+  <updated>2023-06-17T16:08:19.206Z</updated>
   <id>https://blog.purkit.ml/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vigenere 密码以及 C++ 实现</title>
+    <link href="https://blog.purkit.ml/2023/06/17/vignere-code/"/>
+    <id>https://blog.purkit.ml/2023/06/17/vignere-code/</id>
+    <published>2023-06-16T16:00:00.000Z</published>
+    <updated>2023-06-17T16:08:19.206Z</updated>
+    
+    
+    <summary type="html">本文介绍了 Vigenere 密码并提供其 C++ 源码。</summary>
+    
+    
+    
+    <category term="密码学" scheme="https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+    
+    <category term="Vigenere" scheme="https://blog.purkit.ml/tags/Vigenere/"/>
+    
+  </entry>
   
   <entry>
     <title>Playfair 密码原理以及 C++ 实现</title>

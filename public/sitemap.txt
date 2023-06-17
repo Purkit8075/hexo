@@ -1,3 +1,4 @@
+https://blog.purkit.ml/2023/06/17/vignere-code/
 https://blog.purkit.ml/2023/06/09/playfair-code/
 https://blog.purkit.ml/2023/06/05/caesar-code/
 https://blog.purkit.ml/2023/04/06/create-picture-bed-on-tebi/
@@ -53,6 +54,7 @@ https://blog.purkit.ml/tags/Ubuntu/
 https://blog.purkit.ml/tags/Hugo/
 https://blog.purkit.ml/tags/Playfair/
 https://blog.purkit.ml/tags/Software/
+https://blog.purkit.ml/tags/Vigenere/
 https://blog.purkit.ml/categories/%E7%BD%91%E7%AB%99/
 https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/
 https://blog.purkit.ml/categories/C-%E6%95%99%E7%A8%8B/
