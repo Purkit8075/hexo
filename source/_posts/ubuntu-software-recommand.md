@@ -5,7 +5,7 @@ description: 本文分享了我在 Ubuntu 上使用的软件。
 tags: ["Software","Ubuntu"]
 categories: ["Ubuntu"]
 keywords: ["Ubuntu","vscode","SynthWave","tabout","c++","洛雪音乐助手","QQ","Icalingua++"]
-cover: https://ci.cncn3.cn/1e2854aef14210752eb7d9267e08675a.png
+cover: https://img.purkit.ml/ubuntu-software-recommand-cover.jpg
 ---
 
 # Ubuntu 软件推荐

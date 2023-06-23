@@ -5,7 +5,7 @@ description: 本文介绍 C++ 的输出方法和变量与运算符的初级知�
 tags: ["变量","输出"]
 categories: "C++ 教程"
 keywords: "C++"
-cover: https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png
+cover: https://img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++教程（一）

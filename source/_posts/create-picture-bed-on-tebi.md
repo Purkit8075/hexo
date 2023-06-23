@@ -5,7 +5,7 @@ description: 本文介绍如何使用 Tebi 和 PicGo 搭建个人使用的免费
 tags: ["Tebi","PicGo"]
 categories: 网站
 keywords: ["Tebi","PicGo","图床"]
-cover: https://img.purkit.ml/tebi-and-picgo
+cover: https://img.purkit.ml/tebi-cover.jpg
     # C++ 教程： 
 ---
 

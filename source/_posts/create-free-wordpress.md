@@ -5,7 +5,7 @@ description: 从零开始零成本搭建 WordPress 博客。
 tags: ["WordPress"]
 categories: 网站
 keywords: ["WordPress","反代","免费"]
-cover: https://ci.cncn3.cn/ad1520ca31e05876bf505a2ecf204fa8.png
+cover: https://img.purkit.ml/wordpress-cover.jpg
     # C++ 教程：
 ---
 

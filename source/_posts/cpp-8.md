@@ -5,7 +5,7 @@ date: 2022-12-24
 description: 本文介绍 C++ 的多维数组以及动态内存分配。
 categories: "C++ 教程"
 keywords: ["new","delete","动态数组","数组","指针"]
-cover: https://ci.cncn3.cn/62147f26003368f0c8cbf7f5973bd526.png
+cover: https://img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++ 教程（八）
