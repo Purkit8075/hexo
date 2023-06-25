@@ -47,13 +47,13 @@ https://blog.purkit.ml/tags/union/
 https://blog.purkit.ml/tags/new/
 https://blog.purkit.ml/tags/delete/
 https://blog.purkit.ml/tags/WordPress/
+https://blog.purkit.ml/tags/Tebi/
+https://blog.purkit.ml/tags/PicGo/
 https://blog.purkit.ml/tags/%E5%8D%9A%E5%AE%A2/
 https://blog.purkit.ml/tags/Ubuntu/
 https://blog.purkit.ml/tags/Hugo/
 https://blog.purkit.ml/tags/Playfair/
 https://blog.purkit.ml/tags/Software/
-https://blog.purkit.ml/tags/Tebi/
-https://blog.purkit.ml/tags/PicGo/
 https://blog.purkit.ml/tags/Vigenere/
 https://blog.purkit.ml/categories/%E7%BD%91%E7%AB%99/
 https://blog.purkit.ml/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/

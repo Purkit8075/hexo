@@ -624,7 +624,7 @@ hr_icon:
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
-  effect: false
+  effect: true
   # Effect Speed Options (打字效果速度參數)
   startDelay: 1 # time before typing starts in milliseconds
   typeSpeed: 150 # type speed in milliseconds
