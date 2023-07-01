@@ -8,3 +8,5 @@ public/
 .env
 .env.build
 .vercel
+_config.butterfly-new.yml
+_config.yml
