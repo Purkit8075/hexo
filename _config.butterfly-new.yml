@@ -4,10 +4,10 @@
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 menu:
   主页: / || fas fa-home
-  文章 ||fa fa-book:
-    归档: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
+  # 文章 ||fa fa-book:
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
   友情链接: /link/ || fas fa-link
 
 # Code Blocks (代碼相關)
