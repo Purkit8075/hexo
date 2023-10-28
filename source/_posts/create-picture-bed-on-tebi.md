@@ -5,7 +5,7 @@ description: 本文介绍如何使用 Tebi 和 PicGo 搭建个人使用的免费
 tags: ["Tebi","PicGo"]
 categories: 网站
 keywords: ["Tebi","PicGo","图床"]
-cover: https://img.purkit.ml/tebi-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/tebi-cover.jpg
     # C++ 教程： 
 ---
 
@@ -39,21 +39,21 @@ cover: https://img.purkit.ml/tebi-cover.jpg
 
 首先，访问 [Tebi](https://tebi.io/) 并使用邮箱注册账号，在收件箱或者垃圾邮件里点击 `Tebi` 发的链接，完成注册。
 
-接着访问 [Client.tebi.io](https://client.tebi.io/buckets/) ，在右上角的 `Enter bucket name` 中输入您想要的图床域名，例如我的是 `img.purkit.ml` ，然后点击 `ADD BUCKET` 。
+接着访问 [Client.tebi.io](https://client.tebi.io/buckets/) ，在右上角的 `Enter bucket name` 中输入您想要的图床域名，例如我的是 `s3.tebi.io/img.purkit.ml` ，然后点击 `ADD BUCKET` 。
 
-<img title="" src="https://img.purkit.ml/ADD%20BUCKET" alt="" data-align="center" width="596">
+<img title="" src="https://s3.tebi.io/img.purkit.ml/ADD%20BUCKET" alt="" data-align="center" width="596">
 
-接着添加 `DNS` 域名解析。给您的域名添加一个 `CNAME` ，`Target` 填 `您的域名 + .s3.tebi.io` 。例如 `img.purkit.ml` 就填 `img.purkit.ml.s3.tebi.io` 。
+接着添加 `DNS` 域名解析。给您的域名添加一个 `CNAME` ，`Target` 填 `您的域名 + .s3.tebi.io` 。例如 `s3.tebi.io/img.purkit.ml` 就填 `s3.tebi.io/img.purkit.ml.s3.tebi.io` 。
 
 然后回到 `Tebi` 。点击左边的 `Keys` 。接着 `ADD KEY` （输入框中 `Optional key comment` 填不填都可以）。
 
 在 `EDIT` 中将 `S3 Protocol` 打勾。
 
-<img src="https://img.purkit.ml/add-key" title="" alt="" data-align="center">
+<img src="https://s3.tebi.io/img.purkit.ml/add-key" title="" alt="" data-align="center">
 
 回到 `Bucket` ， 点击刚刚创建的 `Bucket` 旁边的 `Edit` 。
 
-<img title="" src="https://img.purkit.ml/click-edit" alt="" data-align="center" width="593">
+<img title="" src="https://s3.tebi.io/img.purkit.ml/click-edit" alt="" data-align="center" width="593">
 
 选择 `Access Control` ，将全部选项都设置成 `Public` 。
 
@@ -61,7 +61,7 @@ cover: https://img.purkit.ml/tebi-cover.jpg
 
 在 `DNS` 解析生效之后，点击 `Hosting` ，将 3 个选项全部勾选。
 
-<img title="" src="https://img.purkit.ml/set-hosting" alt="" data-align="center" width="552">
+<img title="" src="https://s3.tebi.io/img.purkit.ml/set-hosting" alt="" data-align="center" width="552">
 
 其它选项保持默认，点击 `UPDATE` 。
 
@@ -83,13 +83,13 @@ cover: https://img.purkit.ml/tebi-cover.jpg
 
 安装并运行 `PicGo` 后，转到 `插件设置` ，搜索 `S3` ，下载第一个插件。
 
-<img title="" src="https://img.purkit.ml/download-s3" alt="" data-align="center" width="553">
+<img title="" src="https://s3.tebi.io/img.purkit.ml/download-s3" alt="" data-align="center" width="553">
 
 转到 `图床设置 -> Amazon S3` ，新建一个图床。
 
 配置如图：
 
-<img title="" src="https://img.purkit.ml/config-picgo-s3" alt="" data-align="center" width="492">
+<img title="" src="https://s3.tebi.io/img.purkit.ml/config-picgo-s3" alt="" data-align="center" width="492">
 
 图床配置名随意，`应用密钥 ID` 和 `应用密钥` 是在 `Tebi` 中添加的 `Key` 和 `Secret` 。
 
@@ -113,7 +113,7 @@ cover: https://img.purkit.ml/tebi-cover.jpg
 
 最后将下方的 3 个选项全部勾选。点击 `确定` 进行保存。
 
-<img title="" src="https://img.purkit.ml/confing-s3" alt="" data-align="center" width="512">
+<img title="" src="https://s3.tebi.io/img.purkit.ml/confing-s3" alt="" data-align="center" width="512">
 
 在 `上传区` 将上传的图床设置成 `Amazon S3` 。至此，您就可以使用 `PicGo` 和 `Tebi` 作为图床了。
 

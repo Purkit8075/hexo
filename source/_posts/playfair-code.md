@@ -5,7 +5,7 @@ description: 本文介绍分析了 Playfair 密码及其 C++ 实现。
 tags: ["Playfair"]
 categories: 密码学
 keywords: ["Playfair"]
-cover:  https://img.purkit.ml/playfair-cover
+cover:  https://s3.tebi.io/img.purkit.ml/playfair-cover
     # C++ 教程： 
 ---
 

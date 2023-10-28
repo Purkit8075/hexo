@@ -5,7 +5,7 @@ description: 本文介绍 C++ 的循环结构，并且通过制作一个简单�
 tags: ["复习","循环结构"]
 categories: "C++ 教程" 
 keywords: ["循环结构"]
-cover: https://img.purkit.ml/cpp-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++ 教程（四）

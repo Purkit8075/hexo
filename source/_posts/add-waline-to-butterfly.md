@@ -5,7 +5,7 @@ description: 本文介绍如何使用 Waline +Vercel + bit.io 作为 Butterfly �
 tags: ["Waline","Vercel","bit.io"]
 categories: 网站
 keywords: ["Waline","Vercel","bit.io"]
-cover: https://img.purkit.ml/waline-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/waline-cover.jpg
     # C++ 教程： 
 ---
 

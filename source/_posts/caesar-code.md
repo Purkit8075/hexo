@@ -5,7 +5,7 @@ description: 本文介绍凯撒密码原理并使用 C++ 实现其加密和解�
 tags: ["Caesar"]
 categories: "密码学"
 keywords: ["Caesar","凯撒密码"]
-cover: https://img.purkit.ml/caesar-cover
+cover: https://s3.tebi.io/img.purkit.ml/caesar-cover
     # C++ 教程： 
 ---
 

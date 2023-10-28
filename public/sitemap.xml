@@ -2,126 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://purkit.lockey.icu/2022/12/31/add-waline-to-butterfly/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2023/04/06/create-picture-bed-on-tebi/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/12/25/create-free-wordpress/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/11/21/ubuntu-software-recommand/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/11/12/hello-hugo/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/12/24/cpp-8/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/11/18/cpp-7/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://purkit.lockey.icu/2022/11/06/cpp-6/</loc>
     
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/10/29/cpp-5/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/10/22/cpp-4/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/10/15/cpp-3/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/09/30/cpp-2/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2022/09/23/cpp-1/</loc>
-    
-    <lastmod>2023-06-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://purkit.lockey.icu/2023/06/17/vignere-code/</loc>
-    
-    <lastmod>2023-06-17</lastmod>
+    <lastmod>2023-10-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +13,43 @@
   <url>
     <loc>https://purkit.lockey.icu/2023/06/09/playfair-code/</loc>
     
-    <lastmod>2023-06-09</lastmod>
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2023/06/17/vignere-code/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/11/18/cpp-7/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/12/31/add-waline-to-butterfly/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/10/15/cpp-3/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -139,7 +58,88 @@
   <url>
     <loc>https://purkit.lockey.icu/2023/06/05/caesar-code/</loc>
     
-    <lastmod>2023-06-07</lastmod>
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/09/23/cpp-1/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/09/30/cpp-2/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/10/29/cpp-5/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/12/24/cpp-8/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/11/12/hello-hugo/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/10/22/cpp-4/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/12/25/create-free-wordpress/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2023/04/06/create-picture-bed-on-tebi/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://purkit.lockey.icu/2022/11/21/ubuntu-software-recommand/</loc>
+    
+    <lastmod>2023-10-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

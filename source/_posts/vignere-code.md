@@ -5,7 +5,7 @@ description: 本文介绍了 Vigenere 密码并提供其 C++ 源码。
 tags: ["Vigenere"]
 categories: 密码学
 keywords: ["Vigenere","密码学","C++ 实现"]
-cover: https://img.purkit.ml/vigenere-cover.png
+cover: https://s3.tebi.io/img.purkit.ml/vigenere-cover.png
     # C++ 教程： 
 ---
 

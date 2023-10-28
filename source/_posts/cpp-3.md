@@ -5,7 +5,7 @@ description: 本文介绍了 C++ 中函数的基础知识，和 C++ 中的顺序
 tags: ["函数","分支结构","选择结构"]
 categories: "C++ 教程"
 keywords: ["分支结构","选择结构","函数"]
-cover: https://img.purkit.ml/cpp-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++ 教程（三）

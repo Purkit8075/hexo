@@ -5,7 +5,7 @@ description: 本文介绍了 C++ 中的数组、C 风格的字符串和 C++ 的�
 tags: ["函数","地址","字符串","指针","数组"]
 categories: "C++ 教程" 
 keywords: ["函数","地址","字符串","指针","数组"]
-cover: https://img.purkit.ml/cpp-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++ 教程（五）

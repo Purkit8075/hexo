@@ -5,7 +5,7 @@ description: 本文是对于前面博文的补充，包括运算符的其它性�
 tags: ["C风格","enum","字符","补充"]
 categories: "C++ 教程" 
 keywords: ["enum","字符"]
-cover: https://img.purkit.ml/cpp-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++ 教程（六）

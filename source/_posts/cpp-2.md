@@ -5,7 +5,7 @@ description: 在这篇博文中，您将学到：字符串的简单用法、 C++
 tags: ["字符串"]
 categories: "C++ 教程"
 keywords: ["字符串","类型转换","const","#define","sizeof","enum"]
-cover: https://img.purkit.ml/cpp-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/cpp-cover.jpg
 ---
 
 # C++教程（二）

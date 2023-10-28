@@ -5,7 +5,7 @@ description: 从零开始搭建一个静态的个人博客。
 tags: ["博客","Vercel","Ubuntu","Hugo"]
 categories: ["网站"]
 keywords: ["Vercel","Ubuntu","Hugo"]
-cover: https://img.purkit.ml/vercel-hugo-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/vercel-hugo-cover.jpg
 ---
 
 # `Ubuntu` 平台下使用 `Vercel` + `Hugo` 搭建静态博客

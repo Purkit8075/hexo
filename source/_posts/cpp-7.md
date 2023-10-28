@@ -5,7 +5,7 @@ description: 本文将介绍 C++ 中的结构体以及共用体的用法，让�
 tags: ["结构体","共用体","struct","union"]
 categories: "C++ 教程"
 keywords: ["结构体","共用体","struct","union"]
-cover: https://img.purkit.ml/cpp-cover.jpg
+cover: https://s3.tebi.io/img.purkit.ml/cpp-cover.jpg
 
 ---
 
