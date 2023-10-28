@@ -78,21 +78,21 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://img.purkit.ml/avater.jpg
+favicon: https://s3.tebi.io/img.purkit.ml/avater.jpg
 
 # Avatar (頭像)
 avatar:
-  img: https://img.purkit.ml/avater.jpg
+  img: https://s3.tebi.io/img.purkit.ml/avater.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://img.purkit.ml/homepagebk.jpg
+index_img: https://s3.tebi.io/img.purkit.ml/homepagebk.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://img.purkit.ml/homepagebk.jpg
+default_top_img: https://s3.tebi.io/img.purkit.ml/homepagebk.jpg
 
 # The banner image of archive page
 archive_img:
