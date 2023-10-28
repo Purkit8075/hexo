@@ -669,7 +669,7 @@ aside:
       link: https://github.com/Purkit8075
   card_announcement:
     enable: true
-    content: My Blog started on Nov 24,2022.
+    content: 由于 blog.purkit.ml 域名的问题，本博客暂时迁移到 purkit.lockey.icu 上。早期依赖于第三方图床的图片可能无法显示，造成不好的体验还请见谅。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
