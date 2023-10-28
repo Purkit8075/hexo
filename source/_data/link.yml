@@ -5,10 +5,16 @@
     #   link: https://hexo.io/zh-tw/
     #   avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
     #   descr: 快速、简单且强大的网志框架
-    - name: Gelith的小家
-      link: https://www.gelith.top
-      avatar: https://ci.cncn3.cn/Pdah.jpg
-      descr: 一个爱分享的小伙伴
+    - name: Ice Year の位面
+      link: https://blog.iceyear.eu.org/
+      descr: Il n’y a pas de hasard, il n’y a que des rendez-vous.
+      avatar: https://blog.iceyear.eu.org/android-chrome-512x512.webp
+
+    - name: Yon Zlich
+      link: https://blog.yon.im/
+      descr: 来自彼岸，归于虚无。浮华人生，黄粱一梦。
+      avatar: https://static.yon.im/images/avatar.webp
+
     - name: Medi's Space
       link: https://medihbt.github.io/
       descr: I'm Medi. This is Me.

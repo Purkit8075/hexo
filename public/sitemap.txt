@@ -1,5 +1,5 @@
-https://purkit.lockey.icu/tags/index.html
 https://purkit.lockey.icu/link/index.html
+https://purkit.lockey.icu/tags/index.html
 https://purkit.lockey.icu/categories/index.html
 https://purkit.lockey.icu/2022/11/06/cpp-6/
 https://purkit.lockey.icu/2023/06/09/playfair-code/
@@ -51,8 +51,8 @@ https://purkit.lockey.icu/tags/%E5%8D%9A%E5%AE%A2/
 https://purkit.lockey.icu/tags/Ubuntu/
 https://purkit.lockey.icu/tags/Hugo/
 https://purkit.lockey.icu/tags/Playfair/
-https://purkit.lockey.icu/tags/Vigenere/
 https://purkit.lockey.icu/tags/Software/
+https://purkit.lockey.icu/tags/Vigenere/
 https://purkit.lockey.icu/categories/%E7%BD%91%E7%AB%99/
 https://purkit.lockey.icu/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/
 https://purkit.lockey.icu/categories/C-%E6%95%99%E7%A8%8B/
