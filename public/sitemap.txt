@@ -1,3 +1,6 @@
+https://purkit.lockey.icu/tags/index.html
+https://purkit.lockey.icu/link/index.html
+https://purkit.lockey.icu/categories/index.html
 https://purkit.lockey.icu/2022/11/06/cpp-6/
 https://purkit.lockey.icu/2023/06/09/playfair-code/
 https://purkit.lockey.icu/2023/06/17/vignere-code/
@@ -14,12 +17,7 @@ https://purkit.lockey.icu/2022/10/22/cpp-4/
 https://purkit.lockey.icu/2022/12/25/create-free-wordpress/
 https://purkit.lockey.icu/2023/04/06/create-picture-bed-on-tebi/
 https://purkit.lockey.icu/2022/11/21/ubuntu-software-recommand/
-https://purkit.lockey.icu/comments/index.html
 https://purkit.lockey.icu/schedule-doc/index.html
-https://purkit.lockey.icu/about/index.html
-https://purkit.lockey.icu/link/index.html
-https://purkit.lockey.icu/tags/index.html
-https://purkit.lockey.icu/categories/index.html
 https://purkit.lockey.icu/
 https://purkit.lockey.icu/tags/Waline/
 https://purkit.lockey.icu/tags/Vercel/
