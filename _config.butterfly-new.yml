@@ -8,11 +8,7 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  留言板: /comments/ || fa fa-comments
   友情链接: /link/ || fas fa-link
-  网站分析: https://umami.purkit.ml/share/tHPC36hx/Purkit's%20Blog || fa fa-signal
-  # My Disk: https://share.purkit.ml/ || fas fa-cloud
-  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
